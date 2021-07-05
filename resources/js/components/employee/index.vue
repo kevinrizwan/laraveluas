@@ -5,7 +5,7 @@
   <div>
 
  <div class="row">
-  <router-link to="/store-employee" class="btn btn-primary">Add Employee </router-link>
+  <router-link to="/store-employee" class="btn btn-primary">Tambah Pegawai </router-link>
    
  </div>
 <br>
@@ -19,17 +19,17 @@
               <!-- Simple Tables -->
               <div class="card">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Employee List</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">List Pegawai</h6>
                 </div>
                 <div class="table-responsive">
                   <table class="table align-items-center table-flush">
                     <thead class="thead-light">
                       <tr>
-                        <th>Name</th>
-                        <th>Photo</th>
-                        <th>Phone</th>
-                        <th>Sallery</th>
-                        <th>Joining Date</th>
+                        <th>Nama</th>
+                        <th>Foto</th>
+                        <th>No. Telp</th>
+                        <th>Email</th>
+                        <th>Tanggal Bergabung</th>
                         <th>Action</th>
                       </tr>
                     </thead>
@@ -38,7 +38,7 @@
                         <td> {{ employee.name }} </td>
                         <td><img :src="employee.photo" id="em_photo"></td>
                         <td>{{ employee.phone }}</td>
-                        <td>{{ employee.sallery }}</td>
+                        <td>{{ employee.email }}</td>
                         <td>{{ employee.joining_date }}</td>
             <td>
    <router-link :to="{name: 'edit-employee', params:{id:employee.id}}" class="btn btn-sm btn-primary">Edit</router-link>
