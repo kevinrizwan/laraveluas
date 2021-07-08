@@ -3262,54 +3262,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     if (!User.loggedIn()) {
       this.$router.push({
-        name: "/"
+        name: '/'
       });
     }
   },
@@ -3350,9 +3307,9 @@ __webpack_require__.r(__webpack_exports__);
     employeeInsert: function employeeInsert() {
       var _this2 = this;
 
-      axios.post("/api/employee", this.form).then(function () {
+      axios.post('/api/employee', this.form).then(function () {
         _this2.$router.push({
-          name: "employee"
+          name: 'employee'
         });
 
         Notification.success();
@@ -52502,11 +52459,7 @@ var render = function() {
                             _vm._v(" "),
                             _vm.errors.name
                               ? _c("small", { staticClass: "text-danger" }, [
-                                  _vm._v(
-                                    "\n                                                    " +
-                                      _vm._s(_vm.errors.name[0]) +
-                                      "\n                                                "
-                                  )
+                                  _vm._v(" " + _vm._s(_vm.errors.name[0]) + " ")
                                 ])
                               : _vm._e()
                           ]),
@@ -52545,9 +52498,7 @@ var render = function() {
                             _vm.errors.email
                               ? _c("small", { staticClass: "text-danger" }, [
                                   _vm._v(
-                                    "\n                                                    " +
-                                      _vm._s(_vm.errors.email[0]) +
-                                      "\n                                                "
+                                    " " + _vm._s(_vm.errors.email[0]) + " "
                                   )
                                 ])
                               : _vm._e()
@@ -52591,9 +52542,7 @@ var render = function() {
                             _vm.errors.address
                               ? _c("small", { staticClass: "text-danger" }, [
                                   _vm._v(
-                                    "\n                                                    " +
-                                      _vm._s(_vm.errors.address[0]) +
-                                      "\n                                                "
+                                    " " + _vm._s(_vm.errors.address[0]) + " "
                                   )
                                 ])
                               : _vm._e()
@@ -52633,9 +52582,7 @@ var render = function() {
                             _vm.errors.phone
                               ? _c("small", { staticClass: "text-danger" }, [
                                   _vm._v(
-                                    "\n                                                    " +
-                                      _vm._s(_vm.errors.phone[0]) +
-                                      "\n                                                "
+                                    " " + _vm._s(_vm.errors.phone[0]) + " "
                                   )
                                 ])
                               : _vm._e()
@@ -52645,7 +52592,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("div", { staticClass: "form-group" }, [
                         _c("div", { staticClass: "form-row" }, [
-                          _c("div", { staticClass: "col-md-6" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
                             _c("input", {
                               staticClass: "custom-file-input",
                               attrs: { type: "file", id: "customFile" },
@@ -52655,9 +52602,7 @@ var render = function() {
                             _vm.errors.photo
                               ? _c("small", { staticClass: "text-danger" }, [
                                   _vm._v(
-                                    "\n                                                    " +
-                                      _vm._s(_vm.errors.photo[0]) +
-                                      "\n                                                "
+                                    " " + _vm._s(_vm.errors.photo[0]) + " "
                                   )
                                 ])
                               : _vm._e(),
@@ -52706,9 +52651,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "text-center" }, [
       _c("h1", { staticClass: "h4 text-gray-900 mb-4" }, [
-        _vm._v(
-          "\n                                        Tambah Pegawai\n                                    "
-        )
+        _vm._v("Tambah Pegawai")
       ])
     ])
   },
@@ -52720,11 +52663,7 @@ var staticRenderFns = [
       _c(
         "button",
         { staticClass: "btn btn-primary btn-block", attrs: { type: "submit" } },
-        [
-          _vm._v(
-            "\n                                            Submit\n                                        "
-          )
-        ]
+        [_vm._v("Submit")]
       )
     ])
   }
@@ -52964,7 +52903,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("div", { staticClass: "form-group" }, [
                         _c("div", { staticClass: "form-row" }, [
-                          _c("div", { staticClass: "col-md-6" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
                             _c("input", {
                               staticClass: "custom-file-input",
                               attrs: { type: "file", id: "customFile" },
