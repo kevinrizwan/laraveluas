@@ -98,7 +98,7 @@
 
                                         <div class="form-group">
                                             <div class="form-row">
-                                                <div class="col-md-12">
+                                                <div class="col-md-6">
                                                     <input
                                                         type="file"
                                                         class="custom-file-input"
