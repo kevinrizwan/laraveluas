@@ -53,13 +53,13 @@
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
           aria-expanded="true" aria-controls="collapseBootstrap">
           <i class="far fa-fw fa-window-maximize"></i>
-          <span>Employee</span>
+          <span>Pegawai</span>
         </a>
         <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
            
-   <router-link class="collapse-item" to="/store-employee">Add Employee</router-link>
-   <router-link class="collapse-item" to="/employee">All Employee</router-link>
+   <router-link class="collapse-item" to="/store-employee">Tambah Pegawai</router-link>
+   <router-link class="collapse-item" to="/employee">Semua Pegawai</router-link>
             
           </div>
         </div>
