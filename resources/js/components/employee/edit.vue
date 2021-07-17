@@ -27,19 +27,10 @@
                                         <div class="form-group">
                                             <div class="form-row">
                                                 <div class="col-md-6">
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        id="exampleInputFirstName"
-                                                        placeholder="Masukkan NIP/NIK"
-                                                        v-model="form.name"
+                                                    <img
+                                                        :src="form.photo"
+                                                        style="height: 400px; width: 400px;"
                                                     />
-                                                    <small
-                                                        class="text-danger"
-                                                        v-if="errors.name"
-                                                    >
-                                                        {{ errors.name[0] }}
-                                                    </small>
                                                 </div>
 
                                                 <div class="col-md-6">
@@ -56,13 +47,35 @@
                                                     >
                                                         {{ errors.email[0] }}
                                                     </small>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="form-row">
-                                                <div class="col-md-6">
+                                                    <br />
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="exampleInputFirstName"
+                                                        placeholder="Masukkan NIP/NIK"
+                                                        v-model="form.name"
+                                                    />
+                                                    <small
+                                                        class="text-danger"
+                                                        v-if="errors.name"
+                                                    >
+                                                        {{ errors.name[0] }}
+                                                    </small>
+                                                    <br />
+                                                    <input
+                                                        type="email"
+                                                        class="form-control"
+                                                        id="exampleInputFirstName"
+                                                        placeholder="Masukkan Email"
+                                                        v-model="form.email"
+                                                    />
+                                                    <small
+                                                        class="text-danger"
+                                                        v-if="errors.email"
+                                                    >
+                                                        {{ errors.email[0] }}
+                                                    </small>
+                                                    <br />
                                                     <input
                                                         type="text"
                                                         class="form-control"
@@ -76,9 +89,7 @@
                                                     >
                                                         {{ errors.address[0] }}
                                                     </small>
-                                                </div>
-
-                                                <div class="col-md-6">
+                                                    <br />
                                                     <input
                                                         type="text"
                                                         class="form-control"
@@ -93,12 +104,7 @@
                                                         {{ errors.phone[0] }}
                                                     </small>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="form-row">
-                                                <div class="col-md-6">
+                                                <div class="col-md-5">
                                                     <input
                                                         type="file"
                                                         class="custom-file-input"
@@ -117,13 +123,6 @@
                                                         for="customFile"
                                                         >Pilih Foto</label
                                                     >
-                                                </div>
-
-                                                <div class="col-md-6">
-                                                    <img
-                                                        :src="form.photo"
-                                                        style="height: 40px; width: 40px;"
-                                                    />
                                                 </div>
                                             </div>
                                         </div>
