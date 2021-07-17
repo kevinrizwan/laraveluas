@@ -23,56 +23,39 @@
                   </div>
 
       <form class="user" @submit.prevent="employeeInsert" enctype="multipart/form-data">
-
-        <div class="form-group">
+ <div class="form-group">
 
           <div class="form-row">
             <div class="col-md-6">
-         <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Masukkan NIP/NIK" v-model="form.name">
-       <small class="text-danger" v-if="errors.name"> {{ errors.name[0] }} </small>
+
+            <img :src="form.photo" style="height: 400px; width: 400px;">
             </div>
 
 
      <div class="col-md-6">
+     </br>
+     </br>  
          <input type="email" class="form-control" id="exampleInputFirstName" placeholder="Masukkan Email" v-model="form.email">
          <small class="text-danger" v-if="errors.email"> {{ errors.email[0] }} </small>
-            </div>     
-            
-          </div>
-        </div>
-       
-        
-         <div class="form-group">
-
-          <div class="form-row">
-            <div class="col-md-6">
-         <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Masukkan Nama" v-model="form.address">
+          </br>
+         <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Masukkan NIP/NIK" v-model="form.name">
+       <small class="text-danger" v-if="errors.name"> {{ errors.name[0] }} </small>
+       </br>
+        <input type="email" class="form-control" id="exampleInputFirstName" placeholder="Masukkan Email" v-model="form.email">
+         <small class="text-danger" v-if="errors.email"> {{ errors.email[0] }} </small>
+        </br>
+              <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Masukkan Nama" v-model="form.address">
          <small class="text-danger" v-if="errors.address"> {{ errors.address[0] }} </small>
-            </div>
-
-
-        <div class="col-md-6">
+        </br>
          <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Masukkan No. Telp" v-model="form.phone">
          <small class="text-danger" v-if="errors.phone"> {{ errors.phone[0] }} </small>
-            </div>
 
-          </div>
-        </div>
-
-
-         <div class="form-group">
-
-          <div class="form-row">
-            <div class="col-md-6">
+            </div>     
+                <div class="col-md-5">
    <input type="file" class="custom-file-input" id="customFile" @change="onFileSelected">
 
   <small class="text-danger" v-if="errors.photo"> {{ errors.photo[0] }} </small>
        <label class="custom-file-label" for="customFile">Pilih Foto</label>
-            </div>
-
-
-     <div class="col-md-6">
-        <img :src="form.photo" style="height: 40px; width: 40px;">
             </div>     
             
           </div>
